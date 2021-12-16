@@ -1,4 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20211214065227_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20211214065227_InitialCreate.Designer.cs" />
+    <Compile Remove="Data\Migrations\20211214071137_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20211214071137_InitialCreate.Designer.cs" />
+  </ItemGroup>
 
   <ItemGroup>
 
@@ -10,6 +17,10 @@
     </PackageReference>
     
     <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
   </ItemGroup>
 
   <PropertyGroup>
